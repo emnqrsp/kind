@@ -1,5 +1,4 @@
-
-echo "   
+echo "
 This Script is for Kubernet LAB installation on centos"
 
 echo "
@@ -9,7 +8,7 @@ Please enter Kubernet Version you want to install 20.2 or 22.x 23.x 24.x 25.x
 read ver
 for i in `systemctl status docker | grep "Active: active (running)" | wc -l`
  do
- if [[ $i = 1 ]] 
+ if [[ $i = 1 ]]
    then
 echo "
 
@@ -163,4 +162,3 @@ systemctl start docker
 systemctl status docker"
 fi
 done
-
